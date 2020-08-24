@@ -12,8 +12,12 @@ function clickBtnCalcular(){
     var peso = document.getElementById("txtPeso").value;
     var altura = document.getElementById("txtAltura").value;
     var imc = peso/(altura*altura);
+    document.getElementById("resultado").value = Math.round(imc);
+
     alert("Su IMC es: " + Math.round(imc));
+
 }
+
 
 
 
